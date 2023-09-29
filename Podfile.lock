@@ -1,0 +1,20 @@
+PODS:
+  - OpenSSL-Apple (1.1.1k.11)
+  - SwiftyBeaver (1.9.5)
+
+DEPENDENCIES:
+  - OpenSSL-Apple (~> 1.1.1k.11)
+  - SwiftyBeaver
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - OpenSSL-Apple
+    - SwiftyBeaver
+
+SPEC CHECKSUMS:
+  OpenSSL-Apple: 3104e6d32de21815b68aeba31edaa6a78d90e7e0
+  SwiftyBeaver: 84069991dd5dca07d7069100985badaca7f0ce82
+
+PODFILE CHECKSUM: 5225b2616fd06cb0c4647192086e31d00e8377c1
+
+COCOAPODS: 1.10.1
