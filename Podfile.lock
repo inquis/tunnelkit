@@ -1,9 +1,9 @@
 PODS:
-  - OpenSSL-Apple (1.1.1k.11)
+  - OpenSSL-Apple (1.1.1l.11)
   - SwiftyBeaver (1.9.5)
 
 DEPENDENCIES:
-  - OpenSSL-Apple (~> 1.1.1k.11)
+  - OpenSSL-Apple (~> 1.1.1l.11)
   - SwiftyBeaver
 
 SPEC REPOS:
