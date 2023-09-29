@@ -38,3 +38,10 @@ abstract_target 'macos' do
     target 'TunnelKitDemoTunnel-macOS' do
     end
 end
+
+abstract_target 'tvos' do
+    platform :tvos, '17.0'
+    target 'TunnelKit-tvOS' do
+        shared_pods
+    end
+end
