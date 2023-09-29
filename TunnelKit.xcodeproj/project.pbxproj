@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -426,6 +426,9 @@
 		860132CA2AC6BBA90063EA72 /* TLSBox.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E23B41322982AF800304C30 /* TLSBox.h */; };
 		860132CB2AC6BBA90063EA72 /* lzodefs.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E23B41D22982AF800304C30 /* lzodefs.h */; };
 		860132CC2AC6BBA90063EA72 /* CryptoCTR.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E23B3E422982AF800304C30 /* CryptoCTR.h */; };
+		860132D82AC6D56F0063EA72 /* openssl.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 860132D72AC6D56F0063EA72 /* openssl.xcframework */; };
+		860132D92AC6D56F0063EA72 /* openssl.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 860132D72AC6D56F0063EA72 /* openssl.xcframework */; };
+		860132DA2AC6D56F0063EA72 /* openssl.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 860132D72AC6D56F0063EA72 /* openssl.xcframework */; };
 		CD2AEAA866A43CDEC75AA2C1 /* Pods_ios_TunnelKitHost.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3B8B90F61D2F5537A5C0691 /* Pods_ios_TunnelKitHost.framework */; };
 		E5A45D60EA9229A27490EE2C /* Pods_ios_TunnelKitTests_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C34F78A0C56932A2127E6C81 /* Pods_ios_TunnelKitTests_iOS.framework */; };
 		FDC8526145844D69D78C0F44 /* Pods_macos_TunnelKitDemo_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 501B04C95D9A457FFA483C3B /* Pods_macos_TunnelKitDemo_macOS.framework */; };
@@ -764,6 +767,7 @@
 		82499AC779944BE0D1CA651C /* Pods-TunnelKit-TunnelKitTests-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TunnelKit-TunnelKitTests-iOS.release.xcconfig"; path = "Target Support Files/Pods-TunnelKit-TunnelKitTests-iOS/Pods-TunnelKit-TunnelKitTests-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		83830F707A0FDAE3EBFA9008 /* Pods-ios-DemoTunnel-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-DemoTunnel-iOS.debug.xcconfig"; path = "Target Support Files/Pods-ios-DemoTunnel-iOS/Pods-ios-DemoTunnel-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		860132D12AC6BBA90063EA72 /* TunnelKit-tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "TunnelKit-tvOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		860132D72AC6D56F0063EA72 /* openssl.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = openssl.xcframework; sourceTree = "<group>"; };
 		8D69E51508704ECD5ACEBE79 /* Pods-ios-TunnelKitDemoTunnel-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-TunnelKitDemoTunnel-iOS.release.xcconfig"; path = "Target Support Files/Pods-ios-TunnelKitDemoTunnel-iOS/Pods-ios-TunnelKitDemoTunnel-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		9D2F19A70BA726DCE60AAFFB /* Pods-ios-TunnelKitDemo-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-TunnelKitDemo-iOS.debug.xcconfig"; path = "Target Support Files/Pods-ios-TunnelKitDemo-iOS/Pods-ios-TunnelKitDemo-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		A0C15F7E031B3D09730175D7 /* Pods-macos-TunnelKitDemo-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-macos-TunnelKitDemo-macOS.release.xcconfig"; path = "Target Support Files/Pods-macos-TunnelKitDemo-macOS/Pods-macos-TunnelKitDemo-macOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -847,6 +851,7 @@
 			files = (
 				0E411BA22271FA3C00E0852C /* libresolv.tbd in Frameworks */,
 				721A20C2EC6A9738AEBC1F44 /* Pods_ios_TunnelKit_iOS.framework in Frameworks */,
+				860132D82AC6D56F0063EA72 /* openssl.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -856,6 +861,7 @@
 			files = (
 				0E411BA02271FA3300E0852C /* libresolv.tbd in Frameworks */,
 				059617B22CA9F55F1416F32D /* Pods_macos_TunnelKit_macOS.framework in Frameworks */,
+				860132D92AC6D56F0063EA72 /* openssl.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -874,6 +880,7 @@
 			files = (
 				860132B02AC6BBA90063EA72 /* libresolv.tbd in Frameworks */,
 				860132B12AC6BBA90063EA72 /* Pods_ios_TunnelKit_iOS.framework in Frameworks */,
+				860132DA2AC6D56F0063EA72 /* openssl.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1234,6 +1241,7 @@
 		1B27D1F0B446D5907FAF40E1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				860132D72AC6D56F0063EA72 /* openssl.xcframework */,
 				0E411B9F2271FA3300E0852C /* libresolv.tbd */,
 				0E411BA12271FA3C00E0852C /* libresolv.tbd */,
 				0E0541A025A2343500EFC5FF /* NetworkExtension.framework */,
@@ -2591,7 +2599,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DTDYD63ZX9;
 				INFOPLIST_FILE = TunnelKit/Demo/iOS/Demo.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.algoritmico.ios.TunnelKit.Demo;
@@ -2612,7 +2623,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DTDYD63ZX9;
 				INFOPLIST_FILE = TunnelKit/Demo/iOS/Demo.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.algoritmico.ios.TunnelKit.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2630,7 +2644,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DTDYD63ZX9;
 				INFOPLIST_FILE = TunnelKit/Demo/DemoTunnel.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.algoritmico.ios.TunnelKit.Demo.Tunnel;
@@ -2650,7 +2668,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DTDYD63ZX9;
 				INFOPLIST_FILE = TunnelKit/Demo/DemoTunnel.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.algoritmico.ios.TunnelKit.Demo.Tunnel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2674,7 +2696,10 @@
 				DEVELOPMENT_TEAM = DTDYD63ZX9;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = TunnelKit/Demo/macOS/Demo.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.algoritmico.macos.TunnelKit.Demo;
@@ -2698,7 +2723,10 @@
 				DEVELOPMENT_TEAM = DTDYD63ZX9;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = TunnelKit/Demo/macOS/Demo.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.algoritmico.macos.TunnelKit.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2718,7 +2746,11 @@
 				DEVELOPMENT_TEAM = DTDYD63ZX9;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = TunnelKit/Demo/DemoTunnel.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.algoritmico.macos.TunnelKit.Demo.Tunnel;
@@ -2740,7 +2772,11 @@
 				DEVELOPMENT_TEAM = DTDYD63ZX9;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = TunnelKit/Demo/DemoTunnel.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.algoritmico.macos.TunnelKit.Demo.Tunnel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2756,7 +2792,11 @@
 			buildSettings = {
 				DEVELOPMENT_TEAM = DTDYD63ZX9;
 				INFOPLIST_FILE = TunnelKit/Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -2770,7 +2810,11 @@
 			buildSettings = {
 				DEVELOPMENT_TEAM = DTDYD63ZX9;
 				INFOPLIST_FILE = TunnelKit/Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -2787,7 +2831,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DTDYD63ZX9;
 				INFOPLIST_FILE = TunnelKit/Host/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.algoritmico.ios.TunnelKitHost;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -2804,7 +2851,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DTDYD63ZX9;
 				INFOPLIST_FILE = TunnelKit/Host/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.algoritmico.ios.TunnelKitHost;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -2927,7 +2977,8 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 4.2;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -2950,7 +3001,11 @@
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = TunnelKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.algoritmico.apple.TunnelKit;
 				PRODUCT_NAME = TunnelKit;
 				SKIP_INSTALL = YES;
@@ -2977,7 +3032,11 @@
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = TunnelKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.algoritmico.apple.TunnelKit;
 				PRODUCT_NAME = TunnelKit;
 				SKIP_INSTALL = YES;
@@ -3004,7 +3063,11 @@
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = TunnelKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.algoritmico.apple.TunnelKit;
 				PRODUCT_NAME = TunnelKit;
 				SDKROOT = macosx;
@@ -3029,7 +3092,11 @@
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = TunnelKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.algoritmico.apple.TunnelKit;
 				PRODUCT_NAME = TunnelKit;
 				SDKROOT = macosx;
@@ -3049,7 +3116,11 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = DTDYD63ZX9;
 				INFOPLIST_FILE = TunnelKit/Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3069,7 +3140,11 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = DTDYD63ZX9;
 				INFOPLIST_FILE = TunnelKit/Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -3093,7 +3168,11 @@
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = TunnelKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.algoritmico.apple.TunnelKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -3121,7 +3200,11 @@
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = TunnelKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.algoritmico.apple.TunnelKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
