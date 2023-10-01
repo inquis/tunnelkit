@@ -35,7 +35,7 @@
 //
 
 import Foundation
-#if os(iOS)
+#if os(iOS) || os(tvOS)
 import NetworkExtension
 import SystemConfiguration.CaptiveNetwork
 #else
@@ -133,10 +133,12 @@ public class InterfaceObserver: NSObject {
             }
             completionHandler(nil)
 //        }
-        #else
+        #elseif os(macOS)
         let client = CWWiFiClient.shared()
         let ssid = client.interfaces()?.compactMap { $0.ssid() }.first
         completionHandler(ssid)
+        #else
+        completionHandler(nil)
         #endif
     }
 }
