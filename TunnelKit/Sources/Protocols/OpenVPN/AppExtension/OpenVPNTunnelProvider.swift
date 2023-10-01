@@ -640,7 +640,7 @@ extension OpenVPNTunnelProvider: OpenVPNSessionDelegate {
             
             ipv4Settings = NEIPv4Settings(addresses: [ipv4.address], subnetMasks: [ipv4.addressMask])
             ipv4Settings?.includedRoutes = routes
-            ipv4Settings?.excludedRoutes = []
+            ipv4Settings?.excludedRoutes = [NEIPv4Route(destinationAddress: "224.0.0.0", subnetMask: "240.0.0.0"), NEIPv4Route(destinationAddress: "255.255.255.255", subnetMask: "255.255.255.255")]
         }
 
         var ipv6Settings: NEIPv6Settings?
