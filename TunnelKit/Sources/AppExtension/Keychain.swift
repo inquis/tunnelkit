@@ -202,13 +202,13 @@ public class Keychain {
      - Throws: `KeychainError.notFound` if unable to find the password in the keychain.
      **/
     public func password(for username: String, reference: Data, context: String? = nil) throws -> String {
-        var query = [String: Any]()
-        setScope(query: &query, context: context)
-        query[kSecClass as String] = kSecClassGenericPassword
-        query[kSecAttrAccount as String] = username
         // Match the referenced item itself. kSecMatchItemList does not reliably filter by persistent
         // reference on iOS, so the query could return another item with the same account (e.g. a stale
         // one stored under a different service) and hand the tunnel an outdated password.
+        // The persistent reference identifies the item on its own; iOS rejects it combined with other
+        // attributes such as the account or access group (errSecParam), so none are added here.
+        var query = [String: Any]()
+        query[kSecClass as String] = kSecClassGenericPassword
         query[kSecValuePersistentRef as String] = reference
         query[kSecReturnData as String] = true
         
