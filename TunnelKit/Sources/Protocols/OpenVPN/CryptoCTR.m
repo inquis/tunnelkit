@@ -23,6 +23,11 @@
 //  along with TunnelKit.  If not, see <http://www.gnu.org/licenses/>.
 //
 
+#include <TargetConditionals.h>
+// The tvOS simulator has no arm64 OpenSSL slice, so this file is left out there and
+// OpenSSLSimulatorStubs.m provides the symbols instead. See that file for details.
+#if !(TARGET_OS_TV && TARGET_OS_SIMULATOR)
+
 #import <openssl/evp.h>
 #import <openssl/hmac.h>
 #import <openssl/rand.h>
@@ -217,3 +222,5 @@ static const NSInteger CryptoCTRTagLength = 32;
 }
 
 @end
+
+#endif

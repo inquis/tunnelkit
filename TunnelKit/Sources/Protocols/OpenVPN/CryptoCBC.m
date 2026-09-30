@@ -34,6 +34,11 @@
 //      THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 //
 
+#include <TargetConditionals.h>
+// The tvOS simulator has no arm64 OpenSSL slice, so this file is left out there and
+// OpenSSLSimulatorStubs.m provides the symbols instead. See that file for details.
+#if !(TARGET_OS_TV && TARGET_OS_SIMULATOR)
+
 #import <openssl/evp.h>
 #import <openssl/hmac.h>
 #import <openssl/rand.h>
@@ -389,3 +394,5 @@ const NSInteger CryptoCBCMaxHMACLength = 100;
 }
 
 @end
+
+#endif

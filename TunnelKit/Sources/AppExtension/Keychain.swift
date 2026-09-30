@@ -206,7 +206,10 @@ public class Keychain {
         setScope(query: &query, context: context)
         query[kSecClass as String] = kSecClassGenericPassword
         query[kSecAttrAccount as String] = username
-        query[kSecMatchItemList as String] = [reference]
+        // Match the referenced item itself. kSecMatchItemList does not reliably filter by persistent
+        // reference on iOS, so the query could return another item with the same account (e.g. a stale
+        // one stored under a different service) and hand the tunnel an outdated password.
+        query[kSecValuePersistentRef as String] = reference
         query[kSecReturnData as String] = true
         
         var result: AnyObject?
