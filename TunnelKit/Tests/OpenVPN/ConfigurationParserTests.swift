@@ -131,7 +131,7 @@ class ConfigurationParserTests: XCTestCase {
     }
     
     private func url(withName name: String) -> URL {
-        return Bundle(for: ConfigurationParserTests.self).url(forResource: name, withExtension: "ovpn")!
+        return TestUtils.resourcesBundle.url(forResource: name, withExtension: "ovpn")!
     }
     
 }

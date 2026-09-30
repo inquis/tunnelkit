@@ -90,6 +90,22 @@ To use with CocoaPods just add this to your Podfile:
 pod 'TunnelKit'
 ```
 
+### Swift Package Manager
+
+Requires iOS 15+ / macOS 12+ / tvOS 17+. Add the package to your `Package.swift` dependencies (or via Xcode > Add Package Dependencies):
+
+```swift
+.package(url: "https://github.com/inquis/tunnelkit", branch: "master")
+```
+
+then link the `TunnelKit` product to your app and network extension targets, and import it as usual:
+
+```swift
+import TunnelKit
+```
+
+Link the optional `TunnelKitLZO` product as well to enable LZO compression (equivalent to the `TunnelKit/Extra/LZO` subspec).
+
 ### Testing
 
 Download the library codebase locally:

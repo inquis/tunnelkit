@@ -112,7 +112,7 @@ class EncryptionTests: XCTestCase {
     }
 
     func testCertificateMD5() {
-        let path = Bundle(for: EncryptionTests.self).path(forResource: "pia-2048", ofType: "pem")!
+        let path = TestUtils.resourcesBundle.path(forResource: "pia-2048", ofType: "pem")!
         let md5 = try! TLSBox.md5(forCertificatePath: path)
         let exp = "e2fccccaba712ccc68449b1c56427ac1"
         print(md5)
@@ -125,7 +125,7 @@ class EncryptionTests: XCTestCase {
     }
     
     private func privateTestPrivateKeyDecryption(pkcs: String) {
-        let bundle = Bundle(for: EncryptionTests.self)
+        let bundle = TestUtils.resourcesBundle
         let encryptedPath = bundle.path(forResource: "tunnelbear", ofType: "enc.\(pkcs).key")!
         let decryptedPath = bundle.path(forResource: "tunnelbear", ofType: "key")!
         
@@ -142,7 +142,7 @@ class EncryptionTests: XCTestCase {
     }
     
     func testCertificatePreamble() {
-        let url = Bundle(for: EncryptionTests.self).url(forResource: "tunnelbear", withExtension: "crt")!
+        let url = TestUtils.resourcesBundle.url(forResource: "tunnelbear", withExtension: "crt")!
         let cert = OpenVPN.CryptoContainer(pem: try! String(contentsOf: url))
         XCTAssert(cert.pem.hasPrefix("-----BEGIN"))
     }

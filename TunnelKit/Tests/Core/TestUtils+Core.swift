@@ -50,6 +50,14 @@ class TestUtils {
         return suite
     }
     
+    static var resourcesBundle: Bundle {
+        #if SWIFT_PACKAGE
+        return .module
+        #else
+        return Bundle(for: TestUtils.self)
+        #endif
+    }
+
     private init() {
     }
 }
